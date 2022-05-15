@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SignUp Page</title>
+    <style media="screen">
+    body{
+        background-color: #FFFEB7;
+        background: url(imagesOld/background.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 830px;
+        width: 100%;
+      }
+
+      em{
+        color: #FE8F8F;
+      }
+
+      img{
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+
+      .loginbox{
+        background: #36454F;
+        left: 50%;
+        top: 50%;
+        color: white;
+        width: 450px;
+        height: 500px;
+        box-sizing: border-box;
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 3px 3px 3px #345B63;
+      }
+
+      input[type=text], input[type=password], input[type=name], input[type=email]{
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        color: white;
+
+      }
+
+      input[type=number]{
+        background: transparent;
+        color: white;
+      }
+
+      input[type=submit]{
+        margin-top: 6px;
+        margin-right: 6px;
+        margin-left: 0px;
+        margin-bottom: 6px;
+        background-color: #FE8F8F;
+        padding: 8px;
+        font-size: 15px;
+        color: white;
+      }
+
+      input[type="submit"]:hover{
+        background-color: #FCD2D1;
+        color: black;
+      }
+
+      a{
+        text-decoration: none;
+        color: #6F69AC;
+      }
+      div.textbox{
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        width: 28%;
+        padding: 10px;
+        opacity: 1;
+      }
+      div.textbox p{
+        margin: 2%;
+        font-weight: bold;
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <a href="index.html"><img src="imagesOld\movie_mania.png" alt="logo" width="100"></a>
+    <br><br><br><br><br><br>
+    <div class="textbox">
+      <strong>Get Started with <em>Movie Mania</em> Account!</strong>
+    </div>
+
+
+    <form class="loginbox" action="userreg.php" method="post">
+    <table class="registerfields" align="center" cellpadding="7" cellspacing="9">
+      <tr>
+        <td>First Name</td>
+        <td><input type="name" placeholder="Enter Your First Name" id = 'fname' name = 'fname' required></input></td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td><input type="name" placeholder="Enter Your last Name" id = 'lname' name = 'lname' required></input></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td><input type="radio" name="gender" value="M" required>Male &emsp;<input type="radio" name="gender" value="F">Female</td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td><input type="number" value="age" placeholder="Select your age" id = 'age' name = 'age' required></td>
+      </tr>
+      <tr>
+        <td>Email ID</td>
+        <td><input type="email" placeholder="Enter your Email" id = 'email' name = 'email' required></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td><input type="password" placeholder="Enter your Password" id = 'pass' name = 'pass' required></td>
+      </tr>
+      <tr>
+        <td>Phone Number</td>
+        <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required></td>
+      </tr>
+
+    </table>
+    <br><br><input type="submit" name="save" value="Sign Up">
+    <br>
+    <span class="error"></span>
+    <br>
+    <p>Have an account?<a href="userLogin1.php">&emsp;Sign In</a></p>
+
+    </form>
+    </center>
+
+  </body>
+</html>
