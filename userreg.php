@@ -62,9 +62,9 @@ if(isset($_POST['save']))
 							$mail->SMTPAuth = true;
 							$mail->Host = 'smtp.gmail.com';
 							$mail->Port = 465;
-							$mail->Username = 'torchbearers2k21@gmail.com';
-							$mail->Password = 'HelloBro2';
-							$mail->setFrom('torchbearers2k21@gmail.com');
+							$mail->Username = '*********'; //Enter the email address from which you want to send the users a confirmation email upon successful login.
+							$mail->Password = '*********'; //Enter the password of the corresponding email address
+							$mail->setFrom('*********');  //Enter the same email address as mentioned above!
 							$mail->addAddress($email);
 							$mail->Subject = 'Hello from Movie Mania!';
 							$mail->Body = 'Hello '.$_SESSION['custName'].'!! <br /><br />Glad that you signed up with Movie Mania.<br />Hope you will have a memorable experience with us!!';
